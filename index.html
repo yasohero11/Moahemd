@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Drag n Drop</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h3>Drag & Drop</h3>
+            <h5>drop the elements first then resize the drop zones from bottom right</h5>
+        </header>
+        
+        <hr />
+        <div id='work-area'>
+            <div class="widgets-list">
+                <button>New widget</button>
+                <button id="saveBtn">Save</button>
+                <canvas width="300" type="pie" height="300" id="chart-2" draggable="true" class="draggable-elements">
+                </canvas>
+
+                <canvas width="300" type="bar" height="300" id="chart-1" draggable="true" class="draggable-elements">
+                </canvas>
+
+
+                <canvas width="300" type="line" height="300" draggable="true" id="chart-3" class="draggable-elements">
+                </canvas>
+                <canvas width="300" type="horizontalBar" height="300" draggable="true" id="chart-4" class="draggable-elements">
+                </canvas>
+                <canvas width="300" type="polarArea" height="300" draggable="true" id="chart-5" class="draggable-elements">
+                </canvas>
+                <canvas width="300" type="radar" height="300" draggable="true" id="chart-6" class="draggable-elements">
+                </canvas>
+            
+                <canvas width="300" type="doughnut" height="300" draggable="true" id="chart-7" class="draggable-elements">
+                </canvas>
+            
+            </div>
+            <div class="drop-area">
+            </div>
+           
+        </div>
+    </div><script src="chartMaker.js"></script>    
+    <script src="index.js"></script>
+</body>
+
+</html>
